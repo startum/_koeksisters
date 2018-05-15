@@ -1,0 +1,16 @@
+h1{
+	clear: both;
+        font-family: $font-heading;
+        font-size: 2.7em;
+}
+
+h2 {
+	clear: both;
+        font-family: $font-heading;
+        text-transform: uppercase;
+}
+
+h3, h4, h5, h6{
+	clear: both;
+        font-family: $font-subheading;
+}

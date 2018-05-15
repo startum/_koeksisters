@@ -1,0 +1,75 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.entry-header {
+    font-family: $font-heading;
+}
+
+.cat-links {
+    font-size: 90%;
+    font-family: $font__navigation;
+    font-style: italic;
+    
+    a {
+        text-decoration: none;
+        color: #404040;
+        
+        &:focus,
+            &:hover {
+            background-color: aliceblue;
+            color: #404040;
+        }
+    }
+}
+
+.entry-meta{
+    font-size: 90%;
+    font-family: $font__navigation;
+    font-style: italic;
+    
+    a {
+        text-decoration: none;
+        color: #404040;
+        
+        &:focus,
+            &:hover {
+            background-color: aliceblue;
+            color: #404040;
+        }
+    }
+}
+
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Single Post Featured Image */
+
+.featured-image.rounded{
+    img {
+        height: 20em;
+    }
+}

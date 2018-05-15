@@ -1,0 +1,33 @@
+{
+  "name": "friendsofdesign_wp",
+  "version": "0.0.1",
+  "description": "FOD PT COURSE.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startum/WordPress-Part-Time-Course"
+  },
+  "author": "Deborah Butler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/startum/WordPress-Part-Time-Course/issues"
+  },
+  "homepage": "https://github.com/startum/WordPress-Part-Time-Course#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {}
+}

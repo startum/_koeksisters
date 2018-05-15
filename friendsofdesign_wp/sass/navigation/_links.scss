@@ -1,0 +1,10 @@
+a {
+        color: #404040;
+        text-decoration: none;
+        
+        &:focus,
+            &:hover {
+            background-color: #fff;
+            color: #404040;
+        }
+}
