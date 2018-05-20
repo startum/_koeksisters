@@ -1,0 +1,61 @@
+.sticky {
+	display: block;
+}
+​
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+header.entry-header{
+    text-align: center;
+}
+
+
+
+h1.entry-title{
+    display: inline-block;
+    border-bottom: 7px solid #f2f4ff;
+    line-height: 10px;
+}
+​
+.entry-header {
+    font-family: $font__heading;
+    
+}
+
+.entry-meta{
+    font-size: 90%;
+    font-family: $font__navigation;
+    font-style: italic;
+    
+    a {
+        text-decoration: none;
+        color: #404040;
+        
+        &:focus,
+            &:hover {
+            background-color: aliceblue;
+            color: #404040;
+        }
+    }
+}
+​
+.cat-links {
+    font-size: 90%;
+    font-family: $font__navigation;
+    font-style: italic;
+    font-weight: 700;
+    
+    
+    a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        
+        &:focus,
+            &:hover {
+            background-color: aliceblue;
+            color: #f2f4ff;
+        }
+    }
+}
