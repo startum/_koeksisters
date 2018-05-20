@@ -1,20 +1,25 @@
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-​
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-​
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-​
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+.nav-links{
+    
+    margin: 2em 0;
+    padding: 3em 0;
+    
+    a {
+        color: #404040;
+        background-color: aliceblue;
+        text-decoration: none;
+        
+        &:focus,
+            &:hover {
+            background-color: #fff;
+            color: #404040;
+        }
+    }
+}
+
+.nav-previous{ 
+float: left;
+}
+
+.nav-next{ 
+float: right;
 }

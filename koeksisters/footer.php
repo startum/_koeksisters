@@ -15,9 +15,15 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'humescores' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'humescores' ), 'humescores', '<a href="https://mor10.com/courses" rel="designer">Morten Rand-Hendriksen</a>' ); ?>
+                    <span class="footer-icons">
+                        <ul>
+                            <li><a href="https://facebook.com/callmekoeksister"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/k0eksister"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://instagram.com/k0eksister"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            
+                        </ul>
+                    </span>
+			<span class="copyright">©Copyright Jo Jackson 2018</span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

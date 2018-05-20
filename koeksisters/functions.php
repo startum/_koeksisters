@@ -114,6 +114,8 @@ function koeksisters_scripts() {
     /** Custom Fonts
      * 
      */
+        wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+        
         wp_enqueue_style( 'koeksisters-fonts', 'https://fonts.googleapis.com/css?family=Catamaran:700|Muli|Quicksand:300,400,700' );
 
 	wp_enqueue_style( 'koeksisters-style', get_stylesheet_uri() );
@@ -127,18 +129,6 @@ function koeksisters_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'koeksisters_scripts' );
-
-/**
- * Add Font Awesome To Theme
- */
-
-function wpb_load_fa() {
- 
-wp_enqueue_style( 'wpb-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
- 
-}
- 
-add_action( 'wp_enqueue_scripts', 'wpb_load_fa' );
 
 /**
  * Implement the Custom Header feature.

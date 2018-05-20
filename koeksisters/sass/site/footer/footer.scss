@@ -1,0 +1,35 @@
+.site-footer{
+    margin: 2em 0;
+    padding: 5em 0;
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+    
+    span {
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+
+        .footer-icons {
+            
+            ul {
+                list-style: none;
+                display: inline-flex;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                
+                li {
+                    padding: 0 1em;
+                }
+            }
+        }
+        
+        
+  
+        
+     
+
