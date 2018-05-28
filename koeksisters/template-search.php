@@ -1,13 +1,10 @@
 <?php
-/**
- * The template for displaying search results pages.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Koeksisters
- */
+
+/* Template Name: Search Page Template */ 
 
 get_header(); ?>
+
+<?php get_search_form(); ?>
 
 <?php
 if ( have_posts() ) : ?>

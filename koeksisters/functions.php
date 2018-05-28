@@ -58,6 +58,7 @@ function koeksisters_setup() {
 		'gallery',
 		'caption',
 	) );
+        
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'koeksisters_custom_background_args', array(
@@ -75,6 +76,10 @@ endif;
         ));
         
 add_action( 'after_setup_theme', 'koeksisters_setup' );
+
+
+
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -97,6 +102,15 @@ function koeksisters_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'koeksisters' ),
 		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'koeksisters' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+        register_sidebar( array(
+		'name'          => esc_html__( 'About Page', 'koeksisters' ),
+		'id'            => 'sidebar-about',
 		'description'   => esc_html__( 'Add widgets here.', 'koeksisters' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -129,6 +143,8 @@ function koeksisters_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'koeksisters_scripts' );
+
+
 
 /**
  * Implement the Custom Header feature.

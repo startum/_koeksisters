@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Humescores
+ * @package Koeksisters
  */
 
 if ( ! function_exists( 'koeksisters_posted_on' ) ) :
@@ -122,3 +122,10 @@ function koeksisters_category_transient_flusher() {
 }
 add_action( 'edit_category', 'koeksisters_category_transient_flusher' );
 add_action( 'save_post',     'koeksisters_category_transient_flusher' );
+
+
+function koeksisters_excerpt_length( $length ){
+    return 150;
+}
+add_filter( 'excerpt_length', 'koeksisters_excerpt_length' );
+

@@ -1,0 +1,56 @@
+.site-content {
+	padding: 1em;
+	
+	@media screen and (min-width: $query__small) {
+		padding: 2em;
+	}
+}
+
+
+.site-content {
+	max-width: $size__max-width;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: $query__medium) {
+    .homepage-content{
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row  wrap;
+        
+        
+        .content-container{
+            padding: 3%;
+            width: 64%;
+        }
+        
+        .sidebar-area{
+            padding: 3%;
+            width: 24%;
+        }
+        
+    }
+    
+    
+}
+
+
+@media screen and (min-width: $query__medium) {
+	.no-sidebar {
+		
+		.post-content__wrap {
+			display: flex;
+			justify-content: space-between;
+			
+			.entry-meta {
+				width: 20%;
+			}
+
+			.post-content__body {
+				width: 70%;
+			}
+		}
+		
+	}
+}

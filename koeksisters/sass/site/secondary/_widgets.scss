@@ -1,8 +1,25 @@
 .widget {
+    
+    font-family: $font__subheading;
+    
 	margin: 0 0 1.5em;
-
+        
+        ul{
+            list-style: none;
+            padding: 0;
+            
+            li{
+                padding-bottom: 30px;
+                
+                a{
+                    text-transform: uppercase;
+                    font-family: $font__subheading;
+                    font-size: 14px;
+                }
+        }
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+}
 }

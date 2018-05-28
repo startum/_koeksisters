@@ -7,7 +7,8 @@
 }
 
 header.entry-header{
-    text-align: center;
+    text-align: left;
+    position: relative;
 }
 
 
@@ -17,9 +18,16 @@ h1.entry-title{
     border-bottom: 7px solid #f2f4ff;
     line-height: 10px;
 }
+
+h2.entry-title{
+    display: inline-block;
+    border-bottom: 7px solid #f2f4ff;
+    line-height: 10px;
 ​
 .entry-header {
+    
     font-family: $font__heading;
+    }
     
 }
 
@@ -59,3 +67,112 @@ h1.entry-title{
         }
     }
 }
+
+@media screen and (min-width: $query__medium) {
+    .content-area{
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        
+        
+        .site-main.frontpage-main{
+            width: 70%;
+        }
+        
+        .sidebar-area{
+            width: 20%;
+        }
+        
+    } 
+    
+    .continue-reading {
+     text-align: left;
+}
+
+.index-image{
+    
+        position: absolute;
+        right: 0em;
+        top: -12px;
+        z-index: -1;
+    
+    img{
+        border-radius: 50%;
+        height: 15em;
+        width: 15em;
+    }
+}
+
+.front-page-content {
+    width: 60%;
+}
+
+.homepage-content{
+    margin-bottom: 10em;
+}
+
+.single-feature-image{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.archive-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+    flex-wrap: wrap;
+    
+    
+    .archive-content{
+        display: flex;
+        width: 50%;
+        padding: 3em;
+        
+        h2.entry-title{
+            line-height: 30px;
+        }
+    }
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    
+    .content-about{
+        width: 70%;
+    }
+}
+
+.content-about{
+    .entry-content{
+        width: 50%;
+    }
+}
+
+.about-image{
+    
+        position: absolute;
+        right: 0em;
+        top: -12px;
+        z-index: -1;
+    
+    img{
+        border-radius: 50%;
+        height: 20em;
+        width: 20em;
+    }
+}
+}
+
+@media screen and (max-width: $query__small) {
+    h2.entry-title{
+            line-height: 30px;
+        }
+}
+    
+
+
+
+    
+        
