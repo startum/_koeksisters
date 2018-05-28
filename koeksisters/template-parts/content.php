@@ -40,16 +40,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-           <?php
-	if ( has_post_thumbnail() ) { ?>
-	<figure class="featured-image single-feature-image">
-		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
-			<?php
-			the_post_thumbnail('koeksisters-index-img');
-			?>
-		</a>
-	</figure><!-- .featured-image full-bleed -->
-	<?php } ?>
+           
       
 
 	<footer class="entry-footer">

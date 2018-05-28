@@ -13,6 +13,13 @@ body {
         padding: 4em;
 }
 
+@media screen and (max-width: $query__small) {
+            body{
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+}
+
 #page.site{
     border: 1em solid #F2F4FF;
     padding: 3em 6em;

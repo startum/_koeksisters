@@ -172,3 +172,19 @@ button.dropdown-toggle {
 		
 	}
 }
+
+@media screen and (max-width: $query__small) {
+   
+        .menu-toggle{
+            right: -2em;
+        }
+        
+        li#menu-item-1827 {
+            background: #fff;
+        }
+        
+        input.search-field{
+            width: 10.5em;
+        }
+    
+}

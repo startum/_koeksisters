@@ -354,6 +354,13 @@ body {
 	padding: 4em;
 }
 
+@media screen and (max-width: 600px) {
+	body {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
 #page.site {
 	border: 1em solid #F2F4FF;
 	padding: 3em 6em;
@@ -438,27 +445,20 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	background: #f2f4ff;
+	color: #000;
+	font-family: "Quicksand", sans-serif;
+	border: none;
+	padding: 5px 15px;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	background-color: #fff;
+	color: #000;
+	text-decoration: underline;
 }
 
 button:active, button:focus,
@@ -468,9 +468,9 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	color: #000;
+	text-decoration: underline;
 }
 
 input[type="text"],
@@ -489,8 +489,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
+	color: #e1e9f1;
+	border: 1px solid #e1e9f1;
 	border-radius: 3px;
 	padding: 3px;
 }
@@ -511,11 +511,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #e1e9f1;
 }
 
 select {
-	border: 1px solid #ccc;
+	border: 1px solid #e1e9f1;
 }
 
 textarea {
@@ -886,6 +886,18 @@ button.dropdown-toggle {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.menu-toggle {
+		right: -2em;
+	}
+	li#menu-item-1827 {
+		background: #fff;
+	}
+	input.search-field {
+		width: 10.5em;
+	}
+}
+
 .site-header {
 	position: relative;
 	font-family: "Muli", sans-serif;
@@ -934,13 +946,13 @@ button.dropdown-toggle {
 		        justify-content: space-between;
 	}
 	.site-branding {
-		width: 40%;
+		width: 20%;
 		-webkit-box-flex: 1;
 		    -ms-flex: 1 0 auto;
 		        flex: 1 0 auto;
 	}
 	.site-navigation {
-		width: 60%;
+		width: 80%;
 	}
 }
 
@@ -1010,7 +1022,7 @@ h1.entry-title {
 h2.entry-title {
 	display: inline-block;
 	border-bottom: 7px solid #f2f4ff;
-	line-height: 10px;
+	line-height: 20px;
 }
 
 h2.entry-title ​
@@ -1147,6 +1159,10 @@ h2.entry-title ​
 @media screen and (max-width: 600px) {
 	h2.entry-title {
 		line-height: 30px;
+	}
+	h1.entry-title {
+		line-height: 25px;
+		font-size: 25px;
 	}
 }
 

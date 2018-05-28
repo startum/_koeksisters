@@ -134,7 +134,11 @@ function koeksisters_scripts() {
 
 	wp_enqueue_style( 'koeksisters-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'koeksisters-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'koeksisters-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+        wp_localize_script( 'koeksisters-navigation', 'koeksistersScreenReaderText', array(
+            'expand' => __( 'Expand child menu', 'koeksisters'),
+            'collapse' => __( 'Collapse child menu', 'koeksisters' ),
+        ) );
 
 	wp_enqueue_script( 'koeksisters-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -143,6 +147,16 @@ function koeksisters_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'koeksisters_scripts' );
+
+/**
+ * Add search field to navigation 
+ */
+
+add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
+function add_search_box( $items, $args ) {
+    $items .= '<li>' . get_search_form( false ) . '</li>';
+    return $items;
+}
 
 
 

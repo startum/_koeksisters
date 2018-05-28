@@ -22,7 +22,7 @@ h1.entry-title{
 h2.entry-title{
     display: inline-block;
     border-bottom: 7px solid #f2f4ff;
-    line-height: 10px;
+    line-height: 20px;
 ​
 .entry-header {
     
@@ -169,6 +169,11 @@ h2.entry-title{
     h2.entry-title{
             line-height: 30px;
         }
+        h1.entry-title{
+            line-height: 25px;
+            font-size: 25px;
+        }    
+    
 }
     
 
